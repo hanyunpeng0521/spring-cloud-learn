@@ -2,18 +2,20 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>spring-cloud-learn</artifactId>
+        <groupId>com.hyp.learn</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.hyp.learn</groupId>
-    <artifactId>spring-cloud-learn</artifactId>
-    <packaging>pom</packaging>
+    <artifactId>part3_feign</artifactId>
     <version>1.0-SNAPSHOT</version>
-
     <modules>
-        <module>part1_service-register-discovery</module>
-        <module>part2_client-load-balance</module>
-        <module>part3_feign</module>
+        <module>eureka-service-sn-3</module>
+        <module>user-service-3</module>
+        <module>movie-service-3</module>
     </modules>
-
 
 </project>
