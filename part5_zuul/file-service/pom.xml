@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.hyp.learn</groupId>
-    <artifactId>movie-service-1</artifactId>
+    <artifactId>file-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>movie-service-1</name>
+    <name>file-service</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -25,13 +25,11 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
-
 
 
         <!--eureke client-->
@@ -46,12 +44,12 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
-        <!-- 热启动，热部署依赖包，为了调试方便，加入此包 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <optional>true</optional>
-        </dependency>
+        <!--&lt;!&ndash; 热启动，热部署依赖包，为了调试方便，加入此包 &ndash;&gt;-->
+        <!--<dependency>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-devtools</artifactId>-->
+        <!--<optional>true</optional>-->
+        <!--</dependency>-->
     </dependencies>
 
     <dependencyManagement>

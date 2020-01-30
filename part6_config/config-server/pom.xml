@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.hyp.learn</groupId>
-    <artifactId>movie-service-1</artifactId>
+    <artifactId>config-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>movie-service-1</name>
+    <name>config-server</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
@@ -33,11 +33,30 @@
         </dependency>
 
 
-
-        <!--eureke client-->
+        <!-- eureka -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
+
+        <!-- spring cloud bus -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-bus-amqp</artifactId>
+        </dependency>
+
+        <!-- security -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-cloud-starter-security</artifactId>
+        </dependency>
+
+
+        <!-- spring cloud config -->
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-config-server</artifactId>
         </dependency>
 
         <!-- actuator -->
