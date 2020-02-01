@@ -1,6 +1,8 @@
 server:
   port: 8081
 
+#开启refresh接口
+#这里需要注意,2.0之后，默认只开启了端点info、health。其他的需要通过management.endpoints.web.exposure.include进行额外配置。
 management:
   endpoint:
     shutdown:
@@ -8,4 +10,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: "*"
+        include: refresh

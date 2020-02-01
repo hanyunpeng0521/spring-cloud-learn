@@ -1,10 +1,8 @@
 package com.hyp.learn.file.web;
 
+import io.swagger.annotations.Api;
 import org.springframework.util.FileCopyUtils;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -17,7 +15,9 @@ import java.util.Objects;
  * Include in com.hyp.learn.us.web
  * hyp create at 20-1-27
  **/
+@Api(tags = "文件操作")
 @RestController
+@RequestMapping("/file")
 public class FileUploadController {
     @PostMapping(value = "/upload")
     public @ResponseBody

@@ -8,8 +8,15 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
   instance:
     prefer-ip-address: true # 优先注册IP地址而不是hostname
+    # 实例名称  最后呈现地址：ip:8010
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
   healthcheck:
     enabled: true # 启用健康检查,注意:需要引用spring boot actuator
+
+
+# swagger开关
+swagger:
+  enabled: true
 
 spring:
   application:

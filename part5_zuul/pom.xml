@@ -20,4 +20,8 @@
         <module>zuul-service</module>
     </modules>
 
+    <dependencies>
+
+    </dependencies>
+
 </project>

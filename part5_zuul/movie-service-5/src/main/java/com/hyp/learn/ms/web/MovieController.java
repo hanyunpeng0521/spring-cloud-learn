@@ -2,12 +2,12 @@ package com.hyp.learn.ms.web;
 
 import com.hyp.learn.ms.domain.User;
 import com.hyp.learn.ms.feign.UserFeignClient;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.cloud.client.ServiceInstance;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
@@ -17,14 +17,17 @@ import java.util.List;
  * Include in com.hyp.learn.ms.web
  * hyp create at 20-1-27
  **/
-@RestController
+@Api(tags = "电影")
+@RestController("movie")
+@RequestMapping("movie")
 public class MovieController {
 
     @Autowired
     private UserFeignClient userFeignClient;
 
 
-//    @HystrixCommand(fallbackMethod = "findByIdFallback")
+    //    @HystrixCommand(fallbackMethod = "findByIdFallback")
+    @ApiOperation(value = "查询用户信息")
     @RequestMapping(value = "/user/{id}", method = RequestMethod.GET)
     public User findById(@PathVariable Long id) {
         return userFeignClient.findById(id);

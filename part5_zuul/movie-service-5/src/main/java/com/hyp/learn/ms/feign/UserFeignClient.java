@@ -34,7 +34,7 @@ public interface UserFeignClient {
 //     */
 //    @RequestLine("GET /{id}")
 //    User findById(@Param("id") Long id);
-    @GetMapping(value = "/{id}")
+    @GetMapping(value = "/user/{id}")
     User findById(@PathVariable("id") Long id);
 
 //    // 针对两个参数的情况

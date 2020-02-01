@@ -50,7 +50,16 @@
             <artifactId>spring-cloud-starter-netflix-zuul</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>com.marcosbarbero.cloud</groupId>
+            <artifactId>spring-cloud-zuul-ratelimit</artifactId>
+            <version>2.2.3.RELEASE</version>
+        </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
 
         <!-- 热启动，热部署依赖包，为了调试方便，加入此包 -->
         <dependency>
@@ -58,6 +67,19 @@
         <artifactId>spring-boot-devtools</artifactId>
         <optional>true</optional>
         </dependency>
+
+        <!-- Swagger -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+
     </dependencies>
 
     <dependencyManagement>

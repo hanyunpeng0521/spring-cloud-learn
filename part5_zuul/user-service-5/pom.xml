@@ -42,6 +42,18 @@
         </dependency>
 
 
+        <!-- Swagger -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+
         <!--eureke client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -52,6 +64,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.10</version>
+            <scope>compile</scope>
         </dependency>
 
         <!--&lt;!&ndash; 热启动，热部署依赖包，为了调试方便，加入此包 &ndash;&gt;-->

@@ -26,11 +26,41 @@ zuul:
   routes:
     user-service: /user/**
     movie-service: /movie/**
+#    # 这里可以自定义
+#    demo1:
+#      # 匹配的路由规则
+#      path: /user/**
+#      # 路由的目标服务名
+#      serviceId: user-service
+#    demo2:
+#      # 匹配的路由规则
+#      path: /movie/**
+#      # 路由的目标服务名
+#      serviceId: movie-service
+
   # 禁用指定过滤器设置
   #PreRequestLogFilter:
   #  pre:
   #    disable: true # 禁用我们创建的PreRequestLogFilter过滤器
 
+  # 配置限流
+  ratelimit:
+    enabled: true
+    # 对应存储类型(用来统计存储统计信息)
+    repository: redis
+    policy-list:
+      user-service:
+        # 每秒允许多少个请求
+        - limit: 2
+          # 刷新时间(单位秒)
+          refresh-interval: 1
+          # 根据什么统计
+          type:
+            - url
+
+# swagger开启开关
+swagger:
+  enabled: true
 # 下面的设置针对超大文件上传（比如500M），提升了超时设置
 hystrix:
   command:

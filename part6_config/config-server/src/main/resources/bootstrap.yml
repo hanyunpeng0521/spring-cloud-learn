@@ -1,2 +1,9 @@
 encrypt:
   key: \@PINGXIN123456789123456789pingxin
+
+spring:
+  cloud:
+    config:
+      server:
+        encrypt:
+          enabled: false
