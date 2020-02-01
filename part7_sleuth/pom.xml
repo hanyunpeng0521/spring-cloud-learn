@@ -17,5 +17,7 @@
         <module>eureka-service-sn-7</module>
         <module>user-service-7</module>
         <module>movie-service-7</module>
+        <module>zipkin-service-server</module>
+        <module>zuul-service-7</module>
     </modules>
 </project>
