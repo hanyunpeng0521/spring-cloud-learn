@@ -12,6 +12,8 @@
     <groupId>com.hyp.learn</groupId>
     <artifactId>part4_hystrix</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
     <modules>
         <module>eureka-service-sn-4</module>
         <module>user-service-4</module>

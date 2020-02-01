@@ -12,6 +12,7 @@
     <groupId>com.hyp.learn</groupId>
     <artifactId>part2_client-load-balance</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <modules>
         <module>eureka-service-sn-2</module>

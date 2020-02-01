@@ -12,6 +12,8 @@
     <groupId>com.hyp.learn</groupId>
     <artifactId>part5_zuul</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
     <modules>
         <module>eureka-service-sn-5</module>
         <module>user-service-5</module>

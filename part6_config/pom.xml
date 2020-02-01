@@ -12,6 +12,7 @@
     <groupId>com.hyp.learn</groupId>
     <artifactId>part6_config</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <modules>
         <module>config-server</module>

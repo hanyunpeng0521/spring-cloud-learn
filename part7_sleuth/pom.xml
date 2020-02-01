@@ -12,6 +12,8 @@
     <groupId>com.hyp.learn</groupId>
     <artifactId>part7_sleuth</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
 
     <modules>
         <module>eureka-service-sn-7</module>

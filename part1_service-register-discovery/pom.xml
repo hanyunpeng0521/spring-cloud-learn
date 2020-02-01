@@ -11,6 +11,8 @@
     <groupId>com.hyp.learn</groupId>
     <artifactId>part1_service-register-discovery</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
     <name>part1_service-register-discovery</name>
     <description>Demo project for Spring Boot</description>
 
