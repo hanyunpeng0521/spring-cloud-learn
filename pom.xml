@@ -17,6 +17,7 @@
         <module>part5_zuul</module>
         <module>part6_config</module>
         <module>part7_sleuth</module>
+        <module>part8_alibaba</module>
     </modules>
 
 

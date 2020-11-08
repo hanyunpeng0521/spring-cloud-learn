@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-@EnableFeignClients // 要使用Feign，需要加上此注解
+@EnableFeignClients
 public class MovieServiceSnApplication {
 
     public static void main(String[] args) {
@@ -24,6 +24,5 @@ public class MovieServiceSnApplication {
         // Do any additional configuration here
         return builder.build();
     }
-
 
 }

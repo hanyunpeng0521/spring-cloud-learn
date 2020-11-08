@@ -1,0 +1,22 @@
+server:
+  port: 8010
+
+management:
+  endpoint:
+    health:
+      show-details: always
+
+spring:
+  application:
+    name: movie-service
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 15s
+        service-name: movie-service
+
+userservice:
+  url: user-service

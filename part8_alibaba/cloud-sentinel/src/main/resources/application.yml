@@ -1,0 +1,28 @@
+server:
+  port: 8910
+
+
+spring:
+  application:
+    name: cloud-sentinel
+
+  #Sentinel 控制台地址
+  cloud:
+    sentinel:
+      transport:
+        dashboard: localhost:8080
+        #取消Sentinel控制台懒加载
+      eager: true
+      #通过文件读取限流规则
+      datasource:
+        ds1:
+          file:
+            file: classpath:flowrule.json
+            data-type: json
+            rule-type: flow
+        ds2:
+          nacos:
+            server-addr: localhost:8848
+            dataId: ${spring.application.name}-sentinel
+            groupId: DEFAULT_GROUP
+            rule-type: flow
